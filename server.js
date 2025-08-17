@@ -36,7 +36,7 @@ app.post("/send", (req, res) => {
       res.send("Error sending email");
     } else {
       console.log("Email sent: " + info.response);
-      res.send("Data sent successfully!");
+      res.send(" Error Please try again later");
     }
   });
 });
